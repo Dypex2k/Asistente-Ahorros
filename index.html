@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorros - Proyecto Reciclado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ahorros</h1>
+
+    <div>
+        <label for="savingsAmount">Cantidad a Ahorrar:</label>
+        <input type="number" id="savingsAmount" placeholder="Ingrese la cantidad" required>
+    </div>
+
+    <div>
+        <label for="savingsName">Nombre del Ahorro:</label>
+        <input type="text" id="savingsName" placeholder="Ej. Trabajos, Dinero Regalo, Otros" required>
+    </div>
+
+    <button onclick="addSavings()">Agregar Ahorro</button>
+
+    <h2>Saldo Actual</h2>
+    <p id="saldoAmount">Saldo: $0.00</p>
+
+    <h2>Detalles del Depósito</h2>
+    <ul id="depositDetails"></ul>
+
+    <button onclick="resetSavings()">Reiniciar Ahorros</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
